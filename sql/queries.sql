@@ -1,0 +1,14 @@
+CREATE DATABASE wishlist ;
+
+-- Path: \c wishlist
+
+ALTER TABLE users
+ADD COLUMN email VARCHAR(255),
+ADD COLUMN name VARCHAR(255);
+
+
+
+ALTER TABLE products
+ADD COLUMN name VARCHAR(255),
+ADD COLUMN description VARCHAR(255),
+ADD COLUMN price INT;
